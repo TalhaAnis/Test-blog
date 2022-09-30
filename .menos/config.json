@@ -1,0 +1,6 @@
+{
+  "hello": "world",
+  "customDomain": true,
+  "domain": "alternate-universe.biz", 
+  "enabled": false
+}

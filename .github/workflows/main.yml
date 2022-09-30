@@ -1,0 +1,18 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  compliance:
+    uses: ProntoSoft/.github/.github/workflows/workflow.yml@main
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+      CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+      AWS_S3_REGION: sa-east-1
+      ACM_CERTIFICATE_ARN: 'arn:aws:acm:us-east-1:056056223931:certificate\/b30b2f38-0b83-4d4c-88d9-08ab682e2328'
