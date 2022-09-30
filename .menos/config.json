@@ -1,6 +1,13 @@
 {
-  "hello": "world",
-  "customDomain": true,
-  "domain": "alternate-universe.biz", 
-  "enabled": false
+    "site": {
+        "id": "b845d5af-71f8-4058-baeb-910654b63209",
+        "name": "my-name",
+        "subDomain": "  "
+    },
+    "blueprint": {
+        "id": "19c650c3-c575-414b-beea-df7122a64585",
+        "name": "gatsby-starter-blog-beta",
+        "engine": "gatsby"
+    },
+    "enabled": true
 }
